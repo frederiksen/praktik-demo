@@ -29,17 +29,36 @@
 
         function givMigEtSejtBillede () {
             let image = document.getElementById('AwesomePicture');
-            image.setAttribute('src', 'https://cdn.shopify.com/s/files/1/0344/6469/files/Screen_Shot_2016-08-12_at_9.58.52_AM_large.png?3462445560446338769');
+            image.setAttribute('src', 'http://placekitten.com/980/178');
+        }
+
+        let t = 0;
+
+        function startTimer() {
+
+            setInterval(() => {
+                t = t+1;
+
+                let talElement = document.getElementById('tal');
+                talElement.innerHTML = t;
+
+                console.log("test");
+
+            }, 1)
+
         }
     </script>
 <h1>Overskrift</h1>
-asdf
-sdfa
+asdf sdfa
+
+<h1>Tal</h1>
+<p id="tal">-</p>
 
 <img id="AwesomePicture" >
 
 <button onclick="myFunction()">Test</button>
 <button onclick="givMigEtSejtBillede()">Brug et endu sejere billede</button>
+<button onclick="startTimer()">Start timer</button>
 
 </body>
 </html>
