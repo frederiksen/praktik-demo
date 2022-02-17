@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function myFunction() {
+            let a = 100;
+            let b = 5;
+            let c = a +b ;
+            if (c > 15) {
+                alert("c er stor = " + c);
+            } else {
+                alert("c er lille = " + c);
+            }
+
+            for(let i = 0; i < 10; i++) {
+                console.log("i = ", i)
+            }
+
+            let image = document.getElementById('AwesomePicture');
+            image.setAttribute('src', 'https://flyingcdn-bebb5508.b-cdn.net/wp-content/uploads/2020/11/Erhvervstelefoni_forside-980x178.jpg');
+        }
+
+        function givMigEtSejtBillede () {
+            let image = document.getElementById('AwesomePicture');
+            image.setAttribute('src', 'https://cdn.shopify.com/s/files/1/0344/6469/files/Screen_Shot_2016-08-12_at_9.58.52_AM_large.png?3462445560446338769');
+        }
+    </script>
+<h1>Overskrift</h1>
+asdf
+sdfa
+
+<img id="AwesomePicture" >
+
+<button onclick="myFunction()">Test</button>
+<button onclick="givMigEtSejtBillede()">Brug et endu sejere billede</button>
+
+</body>
+</html>
